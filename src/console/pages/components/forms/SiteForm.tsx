@@ -1,5 +1,3 @@
-import useValidatedInput from 'console/hooks/useValidation';
-
 import { useState, FC, useCallback, KeyboardEvent } from 'react';
 
 import { RESTApi } from '@API/REST.api';
@@ -8,6 +6,7 @@ import { NamespaceManager } from '@config/db';
 import { TooltipInfoButton } from '@core/components/HelpTooltip';
 import LoadingPage from '@core/components/Loading';
 import { createSiteData } from '@core/utils/createCRD';
+import useValidatedInput from '@hooks/useValidation';
 import { SiteCrdParams } from '@interfaces/CRD_Site';
 import { HTTPError } from '@interfaces/REST.interfaces';
 import {

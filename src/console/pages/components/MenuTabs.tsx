@@ -1,8 +1,7 @@
-import { useWatchedSkupperResource } from 'console/hooks/useSkupperWatchResource';
-
 import { FC, KeyboardEvent, MouseEvent, useEffect } from 'react';
 
 import { I18nNamespace } from '@config/config';
+import { useWatchedSkupperResource } from '@hooks/useSkupperWatchResource';
 import { Tabs, Tab, TabTitleText } from '@patternfly/react-core';
 import { useTranslation } from 'react-i18next';
 

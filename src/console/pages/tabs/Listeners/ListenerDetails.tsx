@@ -1,9 +1,8 @@
-import { useWatchedSkupperResource } from 'console/hooks/useSkupperWatchResource';
-
 import { FC, KeyboardEvent, MouseEvent, useEffect, useState } from 'react';
 
 import { I18nNamespace } from '@config/config';
 import FormatOCPDateCell from '@core/components/FormatOCPDate';
+import { useWatchedSkupperResource } from '@hooks/useSkupperWatchResource';
 import { ListenerCrdResponse } from '@interfaces/CRD_Listener';
 import {
   Button,

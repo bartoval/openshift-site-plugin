@@ -1,10 +1,9 @@
-import useValidatedInput from 'console/hooks/useValidation';
-
 import { useState, FC, useCallback, useMemo, useRef, useEffect, memo } from 'react';
 
 import { RESTApi } from '@API/REST.api';
 import { I18nNamespace } from '@config/config';
 import { createAccessGrantRequest } from '@core/utils/createCRD';
+import useValidatedInput from '@hooks/useValidation';
 import { AccessGrantCrdParams, AccessGrantParams } from '@interfaces/CRD_AccessGrant';
 import { HTTPError } from '@interfaces/REST.interfaces';
 import {

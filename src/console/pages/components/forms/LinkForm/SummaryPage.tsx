@@ -1,8 +1,7 @@
-import { useWatchedSkupperResource } from 'console/hooks/useSkupperWatchResource';
-
 import { useState, useEffect } from 'react';
 
 import { I18nNamespace } from '@config/config';
+import { useWatchedSkupperResource } from '@hooks/useSkupperWatchResource';
 import { Icon, Bullseye, Spinner, TextContent, Text, TextVariants, Flex, FlexItem } from '@patternfly/react-core';
 import { CheckCircleIcon, ExclamationCircleIcon } from '@patternfly/react-icons';
 import { useTranslation } from 'react-i18next';

@@ -15,7 +15,7 @@ const EmptyData: FC<EmptyDataProps> = function ({ message, description, icon }) 
 
   return (
     <Bullseye>
-      <EmptyState variant={EmptyStateVariant.lg} isFullHeight>
+      <EmptyState variant={EmptyStateVariant.lg} isFullHeight data-testid="sk-emptydata">
         {icon && <EmptyStateIcon icon={icon} />}
         <Title headingLevel="h2" size="lg">
           {message || t('Data not found')}

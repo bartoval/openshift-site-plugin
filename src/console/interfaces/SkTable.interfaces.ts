@@ -1,5 +1,3 @@
-import { FunctionComponent } from 'react';
-
 import { TdProps } from '@patternfly/react-table';
 
 export type NonNullableValue<T> = T extends null | undefined ? never : T;
@@ -16,7 +14,7 @@ export interface SKTableProps<T> {
   columns: SKColumn<NonNullableValue<T>>[];
   rows?: NonNullableValue<T>[];
   title?: string;
-  customCells?: Record<string, FunctionComponent<SKComponentProps<T>>>;
+  customCells?: Record<string, any>;
   borders?: boolean;
   isStriped?: boolean;
   isPlain?: boolean;

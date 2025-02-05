@@ -1,11 +1,10 @@
-import useValidatedInput from 'console/hooks/useValidation';
-
 import { useState, FC, KeyboardEvent } from 'react';
 
 import { RESTApi } from '@API/REST.api';
 import { I18nNamespace } from '@config/config';
 import { TooltipInfoButton } from '@core/components/HelpTooltip';
 import { createListenerRequest } from '@core/utils/createCRD';
+import useValidatedInput from '@hooks/useValidation';
 import { ListenerCrdParams, ListenerSpec } from '@interfaces/CRD_Listener';
 import { HTTPError } from '@interfaces/REST.interfaces';
 import {

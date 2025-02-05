@@ -1,6 +1,5 @@
-import { useWatchedSkupperResource } from 'console/hooks/useSkupperWatchResource';
-
 import { I18nNamespace } from '@config/config';
+import { useWatchedSkupperResource } from '@hooks/useSkupperWatchResource';
 import { Alert } from '@patternfly/react-core';
 import { useTranslation } from 'react-i18next';
 
@@ -14,6 +13,7 @@ const AlertStatus = function () {
     <>
       {site?.isConfigured && !site?.isReady && (
         <Alert
+          data-testid="testid"
           variant="warning"
           isInline
           title={t(

@@ -4,6 +4,7 @@
       "@assets/*": ["console/assets/*"],
       "@core/*": ["console/core/*"],
       "@config/*": ["console/config/*"],
+      "@hooks/*": ["console/hooks/*"],
       "@interfaces/*": ["console/interfaces/*"],
       "@pages/*": ["console/pages/*"],
       "@API/*": ["console/API/*"],

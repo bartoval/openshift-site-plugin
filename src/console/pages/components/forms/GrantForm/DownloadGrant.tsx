@@ -1,5 +1,3 @@
-import { useWatchedSkupperResource } from 'console/hooks/useSkupperWatchResource';
-
 import { FC, useCallback } from 'react';
 
 import cStep1 from '@assets/cstep1.png';
@@ -7,6 +5,7 @@ import cStep2 from '@assets/cstep2.png';
 import cStep3 from '@assets/cstep3.png';
 import { I18nNamespace } from '@config/config';
 import InstructionBlock from '@core/components/InstructionBlock';
+import { useWatchedSkupperResource } from '@hooks/useSkupperWatchResource';
 import { Button, Title, Stack, StackItem, Spinner } from '@patternfly/react-core';
 import { DownloadIcon } from '@patternfly/react-icons';
 import { useTranslation } from 'react-i18next';

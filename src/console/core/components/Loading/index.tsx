@@ -27,7 +27,7 @@ interface LoadingPageProps {
 
 const LoadingPage: FC<LoadingPageProps> = function ({ isFLoating = false, message = '' }) {
   return (
-    <Card isPlain isFullHeight style={isFLoating ? floatLoader : undefined}>
+    <Card isPlain isFullHeight style={isFLoating ? floatLoader : undefined} data-testid="sk-loading">
       <Bullseye>
         <EmptyState>
           <EmptyStateHeader icon={<EmptyStateIcon icon={Spinner} />} />

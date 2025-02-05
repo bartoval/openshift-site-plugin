@@ -3,7 +3,7 @@ import axios, { AxiosError } from 'axios';
 
 import { FetchWithOptions, HTTPError } from '../interfaces/REST.interfaces';
 
-function handleStatusError(e: AxiosError<{ message: string }>) {
+export function handleStatusError(e: AxiosError<{ message: string }>) {
   const error: HTTPError = { ...e };
 
   if (!e.response) {

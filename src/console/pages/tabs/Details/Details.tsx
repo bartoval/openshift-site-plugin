@@ -1,5 +1,3 @@
-import { useWatchedSkupperResource } from 'console/hooks/useSkupperWatchResource';
-
 import { FC, useCallback, useState } from 'react';
 
 import {
@@ -12,6 +10,7 @@ import {
 import FormatOCPDateCell from '@core/components/FormatOCPDate';
 import { TooltipInfoButton } from '@core/components/HelpTooltip';
 import SkTable from '@core/components/SkTable';
+import { useWatchedSkupperResource } from '@hooks/useSkupperWatchResource';
 import { CrdStatusCondition, StatusSiteType } from '@interfaces/CRD_Base';
 import { SKColumn, SKComponentProps } from '@interfaces/SkTable.interfaces';
 import {
@@ -114,7 +113,7 @@ const Details: FC<{ onGoTo: (page: number) => void }> = function ({ onGoTo }) {
 
   return (
     <>
-      <Card isPlain>
+      <Card isPlain data-testid="details">
         <CardHeader>
           <Header site={site} t={t} />
         </CardHeader>
