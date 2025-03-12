@@ -27,7 +27,7 @@
       "spec": {
         "containers": [
           {
-            "image": "quay.io/skupper/network-observer:v2-latest",
+            "image": "quay.io/skupper/network-observer:v2-dev",
             "imagePullPolicy": "Always",
             "name": "network-observer",
             "args": [
